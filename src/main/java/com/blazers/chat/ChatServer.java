@@ -20,6 +20,11 @@ import java.util.Set;
 
 public class ChatServer extends WebSocketServer {
 
+    /* Inside static block we will load shared library */
+    static {
+//        System.loadLibrary("ble_positioning");
+    }
+
     private final static Logger logger = LogManager.getLogger(ChatServer.class);
 
     private HashMap<WebSocket, User> users;
@@ -135,8 +140,9 @@ public class ChatServer extends WebSocketServer {
         try {
             port = Integer.parseInt(System.getenv("PORT"));
         } catch (NumberFormatException nfe) {
-            port = 9000;
+            port = 7000;
         }
+        System.out.println("ChatServer run on port " + port);
         new ChatServer(port).start();
     }
 
