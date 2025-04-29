@@ -1,8 +1,7 @@
-package com.jasofalcon.message;
+package com.blazers.message;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.jasofalcon.message.MessageType;
-import com.jasofalcon.user.User;
+import com.blazers.user.User;
 
 import java.io.Serializable;
 

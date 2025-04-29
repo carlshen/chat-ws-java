@@ -1,4 +1,4 @@
-package com.jasofalcon.user;
+package com.blazers.user;
 
 import java.io.Serializable;
 import java.util.Objects;

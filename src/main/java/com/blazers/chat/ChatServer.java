@@ -1,11 +1,11 @@
-package com.jasofalcon.chat;
+package com.blazers.chat;
 
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jasofalcon.message.Message;
-import com.jasofalcon.message.MessageType;
-import com.jasofalcon.user.User;
+import com.blazers.message.Message;
+import com.blazers.message.MessageType;
+import com.blazers.user.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.java_websocket.WebSocket;
